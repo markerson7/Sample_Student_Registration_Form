@@ -442,7 +442,7 @@ public class Student_LoginSystem extends javax.swing.JFrame {
 
         try{
             id = Integer.parseInt(RecordTable.getValueAt(SelectedRows, 0).toString());
-            deleteItem = JOptionPane.showConfirmDialog(null, "Confirm if you want to delete item",
+            deleteItem = JOptionPane.showConfirmDialog(null, "Please confirm if you want to delete item",
                 "Warning", JOptionPane.YES_NO_OPTION);
 
             if(deleteItem == JOptionPane.YES_OPTION){
@@ -473,7 +473,7 @@ public class Student_LoginSystem extends javax.swing.JFrame {
     private void jbtnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnExitActionPerformed
 
         frame = new JFrame("Exit");
-        if(JOptionPane.showConfirmDialog(frame, "Confirm if you want to exit", "STUDENT REGISTRATION FORM",
+        if(JOptionPane.showConfirmDialog(frame, "Please confirm if you want to exit", "STUDENT REGISTRATION FORM",
             JOptionPane.YES_NO_OPTION)==JOptionPane.YES_OPTION)
     {
         System.exit(0);
@@ -488,7 +488,7 @@ public class Student_LoginSystem extends javax.swing.JFrame {
         try{
             jTable.print(JTable.PrintMode.NORMAL,header,footer);
         }catch(java.awt.print.PrinterException e){
-            System.err.format("No printer found", e.getMessage());
+            System.err.format("No Printer Found", e.getMessage());
         }
     }//GEN-LAST:event_jbtnPrintActionPerformed
 
